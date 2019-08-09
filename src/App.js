@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch, Link, NavLink } from 'react-router-dom';
-import SignUpForm from './pages/SignUpForm/SignUpForm';
-import SignInForm from './pages/SignInForm/SignInForm';
+import SellerSignUp from './pages/SellerSignUp/SellerSignUp';
+import CustomerSignUp from './pages/CustomerSignUp/CustomerSignUp';
 
 import './App.css';
 
@@ -10,8 +10,9 @@ class App extends Component {
     return (
       <Router basename="/hcl-myproduct/">
         <Switch>
-          <Route exact path="/" component={SignUpForm} />
-          {/* <Route exact path="/" component={SignInForm} /> */}
+          <Route exact path="/SellerSignUp" component={SellerSignUp} />
+          <Route exact path="/CustomerSignUp" component={CustomerSignUp} />
+
         </Switch>
       </Router>
     );

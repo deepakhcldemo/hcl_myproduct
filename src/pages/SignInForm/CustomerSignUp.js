@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route, Switch, Link, NavLink } from 'react-router-dom';
-import './SignUpForm.css';
+import '././SellerSignUp.css';
 import SelectSearch from '../../components/select-search';
-class SignUpForm extends Component {
+class CustomerSignUp extends Component {
     constructor() {
         super();
 
@@ -290,13 +290,10 @@ class SignUpForm extends Component {
         } = this.state;
         return (
             <div className="App">
-
-
                 <div className="App__Form">
-
                     <div className="PageSwitcher">
-                        <NavLink to="/sign-in" activeClassName="PageSwitcher__Item--Active" className="PageSwitcher__Item">Sign In</NavLink>
-                        <NavLink exact to="/" activeClassName="PageSwitcher__Item--Active" className="PageSwitcher__Item">Sign Up</NavLink>
+                        <NavLink to="/" activeClassName="PageSwitcher__Item--Active" className="PageSwitcher__Item">Customer SignUp</NavLink>
+                        <NavLink exact to="/SignUpForm" activeClassName="PageSwitcher__Item--Active" className="PageSwitcher__Item">Seller SignUp</NavLink>
                     </div>
                     {/* <div className="FormTitle">
                         <NavLink to="/sign-in" activeClassName="FormTitle__Link--Active" className="FormTitle__Link">Sign In</NavLink>
@@ -337,7 +334,6 @@ class SignUpForm extends Component {
                                             this.handleDropdownSelection(e, 'country')
                                         }
                                     />
-
                                     {submitted && !country && (
                                         <div className="help-block">Country is required</div>
                                     )}
@@ -361,4 +357,4 @@ class SignUpForm extends Component {
         );
     }
 }
-export default SignUpForm;
+export default CustomerSignUp;
