@@ -290,7 +290,7 @@ class SignUpForm extends Component {
         } = this.state;
         return (
             <div className="App">
-                <div className="App__Aside"></div>
+
 
                 <div className="App__Form">
 

@@ -2,15 +2,18 @@
     height: 100vh;
     display: flex;
     color: white;
-}
-
-.App__Aside {
-    width: 50%;
     background-color: #66DAC7;
 }
 
+/* .App__Aside {
+    width: 50%;
+    background-color: #66DAC7;
+} */
+
 .App__Form {
     width: 50%;
+    max-height: -webkit-fill-available;
+    margin:auto;
     background-color: #2E4158;
     padding: 25px 40px;
     overflow: auto;
